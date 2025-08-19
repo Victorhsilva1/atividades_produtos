@@ -37,7 +37,7 @@ nav li {
 nav a {
   color: #333232;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -54,7 +54,7 @@ nav a:hover {
 
 h2 {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
 }
 
 nav img{ 
@@ -82,6 +82,7 @@ main {
 .containerMain p {
     color: rgba(223, 220, 220, 0.89);
     width: 50vw;
+    font-size: 1.4rem;
 }
 
 .containerMain h2 {
@@ -90,7 +91,7 @@ main {
     text-align: center;
     justify-content: center; 
     margin-bottom: 4px; 
-    font-size: 2rem; 
+    font-size: 3rem; 
 }
 
 .wallpaperMain {
@@ -100,30 +101,82 @@ main {
 
 section {
     display: flex;
+    justify-content: center;
+    padding: 50px;
 }
 
 section p {
     color: white;
 }
 
+.items {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 40px;
+   padding: 30px;
+}
+
 .card {
-    border: 1px white solid;
-    width: 30vw;
-    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px rgb(37, 172, 77) solid;
     border-radius: 10px;
+    padding: 20px;
+    background-color: #222;
+    color: white;
 }
 
 
 .cardImg {
-    width: 35%;
+    width: 60%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+}
+
+.card-description {
+    font-size: 0.9rem;
+    color: #ccc;
+    flex-grow: 1;
+}
+
+.card-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #44d62c;
 }
 
 main h3 {
     color: #44d62c;
-    font-size: 2rem;
+    font-size: 3rem;
     display: flex;
     text-align: center;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 100px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #44d62c;
+}
+
+.footer-container p {
+    font-size: 0.9rem;
+    color: #888;
 }
