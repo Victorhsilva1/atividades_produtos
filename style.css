@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #000000f6;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.containerNav {
+    display: flex;
+    background-color: #44d62c;
+}
+
+.logo {
+  color: black;
+  padding: 15px;
+}
+
+
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 80px;
+  padding-top: 23px;
+  
+}
+
+nav a {
+  color: #333232;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.containerSub {
+    background-color:#222;
+    display: grid;
+    place-content: center;
+    padding: 10px;
+   
+}
+
+h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav img{ 
+    width: 20px;
+    margin-left: 80px;
+}
+
+.containerMain {
+    height: 25vh;
+    display: grid;
+    place-content: center;
+    background-color: #000;
+    border-top: 1px solid #44d62c;
+    
+}
+
+
+main {
+    border-bottom: 1px solid #44d62c;
+}
+.space {
+    margin-top: 30px;
+}
+
+.containerMain p {
+    color: rgba(223, 220, 220, 0.89);
+    width: 50vw;
+}
+
+.containerMain h2 {
+    color: #44d62c;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    margin-bottom: 4px; 
+    font-size: 2rem; 
+}
+
+.wallpaperMain {
+    width: 100vw;
+    height: 64vh;
+}
+
+section {
+    display: flex;
+}
+
+section p {
+    color: white;
+}
+
+.card {
+    border: 1px white solid;
+    width: 30vw;
+    height: 20vh;
+    border-radius: 10px;
+}
+
+
+.cardImg {
+    width: 35%;
+}
+
+main h3 {
+    color: #44d62c;
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
