@@ -13,25 +13,23 @@ body {
 
 .containerNav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #44d62c;
+    padding: 0 30px;
 }
 
 .logo {
   color: black;
   padding: 15px;
 }
-
-
-
 nav ul {
   padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 80px;
-  padding-top: 23px;
-  
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 nav a {
@@ -44,6 +42,10 @@ nav a:hover {
   color: #000;
 }
 
+
+h1 {
+    font-size: 3.2rem;
+}
 .containerSub {
     background-color:#222;
     display: grid;
@@ -59,7 +61,7 @@ h2 {
 
 nav img{ 
     width: 20px;
-    margin-left: 80px;
+    display: block; /* Previne espaço extra abaixo da imagem */
 }
 
 .containerMain {
