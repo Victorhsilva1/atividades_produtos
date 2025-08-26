@@ -5,13 +5,15 @@
     font-family:"Roboto", sans-serif;
 }
 
+
+:root {
+    --hover: #44d62c; 
+}
+
 body {
 	margin: 0;
 	background: #000000f6;
-	font-weight: 600;
-   
-    
-    
+	font-weight: 600;   
 }
 
 .containerNav {
@@ -65,20 +67,44 @@ h2 {
 
 nav img{ 
     width: 20px;
-    display: block; /* Previne espaço extra abaixo da imagem */
+    display: block; 
 }
 
 .containerMain {
-    height: 35vh;
+    height: 40vh;
     display: grid;
     place-content: center;
     background-color: #000;
 }
 
+/* Modelo inspirado no Raise https://codepen.io/giana/pen/BZaGyP */
+button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 4em;
+    color:#44d62c;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
 
-main {
-    border-bottom: 1px solid #44d62c;
-}
+ button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+  }
+  
+
+  .containerBox {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .box {
+    margin: 20px;
+  }
 .space {
     margin-top: 30px;
 }
@@ -183,4 +209,56 @@ footer {
 .footer-container p {
     font-size: 0.9rem;
     color: #888;
+}
+
+
+@media (max-width: 1024px) {
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .containerMain p {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerNav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .containerMain h2, main h3 {
+        font-size: 2.2rem;
+    }
+
+    .containerMain p {
+        width: 90vw;
+        font-size: 1.1rem;
+    }
+
+    .containerMain {
+        height: 60vh;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    h2 {
+        display: none;
+    }
+    .items {
+        grid-template-columns: 1fr;
+    }
+
+    .box {
+        margin: 10px;
+    }
+
 }

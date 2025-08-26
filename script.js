@@ -11,7 +11,6 @@ const criarCard = (produto) => {
     //Criando as constantes como cada elemento do html
     const card = document.createElement('div')
     card.classList.add('card')
-    
     //Ou seja criando a constante imagem e definindo que 
     const imagem = document.createElement('img')
     //Haverá um cardImg que será a class desse elemento
@@ -35,7 +34,7 @@ const criarCard = (produto) => {
 
     const ratingSpan = document.createElement('span')
   
-    ratingSpan.textContent = `Classificação: ${produto.classificacao} `
+    ratingSpan.textContent = `Classificação: ${produto.classificacao}/5 `
     ratingContainer.appendChild(ratingSpan)
 
     const preco = document.createElement('p')
