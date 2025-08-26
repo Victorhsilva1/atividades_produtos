@@ -7,7 +7,7 @@
 body {
 	margin: 0;
 	background: #000000f6;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', sans-serif;25
 	font-weight: 800;
 }
 
@@ -65,7 +65,7 @@ nav img{
 }
 
 .containerMain {
-    height: 25vh;
+    height: 35vh;
     display: grid;
     place-content: center;
     background-color: #000;
@@ -167,7 +167,7 @@ main h3 {
     text-align: center;
     justify-content: center;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 footer {
