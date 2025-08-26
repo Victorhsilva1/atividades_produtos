@@ -11,8 +11,7 @@ const criarCard = (produto) => {
     //Criando as constantes como cada elemento do html
     const card = document.createElement('div')
     card.classList.add('card')
- 
-
+    
     //Ou seja criando a constante imagem e definindo que 
     const imagem = document.createElement('img')
     //Haverá um cardImg que será a class desse elemento
