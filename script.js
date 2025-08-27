@@ -5,6 +5,8 @@ import produtos from "./produtos_atualizados.json" with {type: "json"}
  
 //Selecionando o elemento items será o container para todos os cards.
 const container = document.querySelector('.items')
+
+
  
 const criarCard = (produto) => {
 
@@ -42,6 +44,8 @@ const criarCard = (produto) => {
 
     //Adicionando os elementos em cada div
     card.append(imagem, titulo, descricao, ratingContainer, preco)
+
+    card.onclick = () => mensagem(produto.nome)
  
     //Retornando a função card
     return card
@@ -55,4 +59,8 @@ const carregarProdutos = () => {
     cards.forEach(card => container.appendChild(card))
 }
  
+function mensagem(produto){
+  alert('O produto escolhido foi: ' + produto)
+}
+
 carregarProdutos()
